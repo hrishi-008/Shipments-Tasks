@@ -1,0 +1,30 @@
+Backend: Designing an Automated Email Scheduling API
+
+Objective: 
+The objective of this assignment is to design and implement an API that allows users to schedule emails for automatic delivery at specified times.
+This involves creating endpoints to accept payloads containing email details (recipient, subject, body) along with a schedule time, and implementing a backend process to handle the scheduling and sending of emails accordingly. 
+The API will also include options for scheduling recurring emails on a daily, weekly, monthly, or quarterly basis, thereby automating the process of email delivery and ensuring that emails are sent as per user-defined schedules.
+
+Features to Include
+Email Scheduling:
+Allow users to schedule emails to be sent at a specific date and time.
+Recurring Emails:
+Provide options for users to set emails to recur on a daily, weekly, monthly, or quarterly basis.
+In the Daily, user can select on which time they want to schedule for example (on 2PM and 4PM)
+In the weekly user can select on which day they want to schedule for example (Monday, Tuesday…) and also time..
+In the Monthly user can select on which day they want to schedule for example (on day 28th or on day 23) and also time..
+In the Quarterly user can select on which day they want to schedule for example (on day 14th or day 9th) and also time…
+Email Details:
+Accept payloads that contain:
+Recipient email address.
+Subject of the email.
+Body of the email.
+Schedule time for the email.
+Attachments
+
+API Specification:
+Design a RESTful API with the following endpoints:
+POST /schedule-email: Endpoint to schedule an email.
+GET /scheduled-emails: Endpoint to retrieve a list of scheduled emails.
+GET /scheduled-emails/{id}: Endpoint to retrieve details of a specific scheduled email.
+DELETE /scheduled-emails/{id}: Endpoint to cancel a scheduled email
